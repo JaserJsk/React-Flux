@@ -1,6 +1,6 @@
-##Starter Kit for [React Flux Applications](https://app.pluralsight.com/library/courses/react-flux-building-applications/table-of-contents)
+#Starter Kit for [React Flux Applications](https://app.pluralsight.com/library/courses/react-flux-building-applications/table-of-contents)
 
-####Prerequisites
+##Prerequisites
 ---
 1. Install [Node.js](https://nodejs.org/en/ "Node.js")
 2. Open PowerShell and navigate to project directory.
@@ -12,7 +12,7 @@
 
 ---
 
-####Project Structure
+##Project Structure
 ---
     .root
     ├── dist
