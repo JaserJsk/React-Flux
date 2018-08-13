@@ -8,7 +8,7 @@
 5. Re-Open PowerShell and navigate to project directory.
 6. Type `npm install --save gulp@3.9.0 gulp-connect@2.2.0 gulp-open@1.0.0 browserify@11.0.1 reactify@1.1.1 vinyl-source-stream@1.1.0 bootstrap@3.3.5 jquery@2.1.4 gulp-concat@2.6.0 gulp-eslint@0.15.0`
 7. When all packages are installed type `npm update` to make sure that the latest versions are used.
-8. Type `gulp` to Run the application.
+8. After updating all packages, type `npm install --save react@0.13.3 react-router@0.13.3 flux@2.0.3` to install these specific packages.
 
 ## Configuration
 Open `gulpfile.js` and add the below code.
@@ -129,6 +129,9 @@ Open `eslint.config.json` and add the below code.
       		"$": true
     	}
 	}
+
+## Run Application
+Type `gulp` to Run the application.
 
 ## Project Structure
 	.root
