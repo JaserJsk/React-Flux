@@ -1,6 +1,6 @@
-# Starter Kit for React Flux Applications
+## Starter Kit for React Flux Applications
 
-## Prerequisites
+### Prerequisites
 1. Install [Node.js](https://nodejs.org/en/ "Node.js")
 2. Open PowerShell and navigate to project directory.
 3. Type `npm init` and hit enter, this will generate a `package.json` file with requierd info.
@@ -10,7 +10,7 @@
 7. When all packages are installed type `npm update` to make sure that the latest versions are used.
 8. After updating all packages, type `npm install --save react@0.13.3 react-router@0.13.3 flux@2.0.3` to install these specific packages.
 
-## Configuration
+### Configuration
 Open `gulpfile.js` and add the below code.
     
 	"use strict";
@@ -130,10 +130,10 @@ Open `eslint.config.json` and add the below code.
     	}
 	}
 
-## Run Application
+### Run Application
 Type `gulp` to Run the application.
 
-## Project Structure
+### Project Structure
 	.root
 	├── dist
 		├── css
