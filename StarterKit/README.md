@@ -81,19 +81,19 @@ Open `gulpfile.js` and add the below code.
 	gulp.task('default', ['html', 'js', 'open', 'watch']);
 
 ## Project Structure
-    .root
-    ├── dist
-          ├── scripts
-	            └── bundle.js
-          └── index.html
-    ├── node_modules
-          └── * packages
-    ├── src
-	      ├── index.html
-		  └── main.js
-    ├── gulpfile.js
+	.root
+	├── dist
+		├── scripts
+			└── bundle.js
+		└── index.html
+	├── node_modules
+		└── * packages
+	├── src
+		├── index.html
+		└── main.js
+	├── gulpfile.js
 	├── package.json
 	├── package-lock.json
-    └── README.md
+	└── README.md
 	
-    3 directories, 8 files
+	3 directories, 8 files
