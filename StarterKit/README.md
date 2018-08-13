@@ -50,8 +50,8 @@ Open `gulpfile.js` and add the below code.
     		],
 			dist: './dist',
 			mainJs: './src/main.js'
+		}
 	}
-}
 
 	// Start a local development server
 	gulp.task('connect', function() {
