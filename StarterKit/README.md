@@ -48,6 +48,7 @@ Open `gulpfile.js` and add the below code.
       			'node_modules/bootstrap/dist/css/bootstrap.min.css',
       			'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
     		],
+			images: './src/images/*',
 			dist: './dist',
 			mainJs: './src/main.js'
 		}
@@ -90,6 +91,17 @@ Open `gulpfile.js` and add the below code.
 			.pipe(gulp.dest(config.paths.dist + '/css'));
 	});
 
+	// Migrates images to dist folder
+	gulp.task('images', function() {
+		gulp.src(config.paths.images)
+			.pipe(gulp.dest(config.paths.dist + '/images'))
+			.pipe(connect.reload());
+
+		// Publish favicon
+		gulp.src('./src/favicon.ico')
+			.pipe(gulp.dest(config.paths.dist));
+	});
+
 	gulp.task('lint', function() {
 		return gulp.src(config.paths.js)
 			.pipe(lint({config: 'eslint.config.json'}))
@@ -101,7 +113,7 @@ Open `gulpfile.js` and add the below code.
 		gulp.watch(config.paths.js, ['js', 'lint']);
 	});
 
-	gulp.task('default', ['html', 'js', 'css', 'lint', 'open', 'watch']);
+	gulp.task('default', ['html', 'js', 'css', 'images', 'lint', 'open', 'watch']);
 
 Open `eslint.config.json` and add the below code.
 
@@ -138,12 +150,14 @@ Type `gulp` to Run the application.
 	├── dist
 		├── css
 			└── bundle.css
+		├── images
 		├── scripts
 			└── bundle.js
 		└── index.html
 	├── node_modules
 		└── * packages
 	├── src
+		├── images
 		├── index.html
 		└── main.js
 	├── eslint.config.json
@@ -152,4 +166,4 @@ Type `gulp` to Run the application.
 	├── package-lock.json
 	└── README.md
 	
-	5 directories, 10 files
+	7 directories, 10 files
