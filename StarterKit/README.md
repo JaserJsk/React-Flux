@@ -144,6 +144,8 @@ Open `eslint.config.json` and add the below code.
 
 ### Run Application
 Type `gulp` to Run the application.
+Type `ctrl + c` to kill current process.
+Type `ctrl + k` to clear the terminal.
 
 ### Project Structure
 	.root
