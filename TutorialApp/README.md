@@ -1,13 +1,13 @@
-## This is a "Tutorial App" based on the ["Starter Kit"](https://github.com/JonasJsk/React-Flux/tree/master/StarterKit) in the same repository
+### This is a "Tutorial App" based on the ["Starter Kit"](https://github.com/JonasJsk/React-Flux/tree/master/StarterKit) in the same repository
 
 ### This "Tutorial App" is done by following the tutorial made by "Cory House" at [Pluralsight](https://app.pluralsight.com/library/courses/react-flux-building-applications/table-of-contents)
 
-- - - -
+---
 
 ### Docs
 The documentation for the "Tutorial App" can be found [here](https://docs.senseidev.com/dokumentation/javascript-library/react/react-flux-1/tutorial-app)
 
-- - - -
+---
 
 ### Notes
 
@@ -39,14 +39,14 @@ Define a set of default properties that components should use when and if the pa
 Add a key to dynamic child elements.
 `<tr key = { author.id } >`
 
-- - - -
+---
 
 ### Command Line
 * Type `gulp` to Run the application.
 * Type `ctrl + c` to kill current process.
 * Type `ctrl + k` to clear the terminal.
 
-- - - -
+---
 
 ### Unidirectional Flow
 	┌─────────────────────┐
@@ -70,7 +70,7 @@ Add a key to dynamic child elements.
       	   COMPONENT         	to reflect all the changes.
 	└─────────────────────┘
 
-- - - -
+---
 
 ### Project Structure
 	.root
@@ -124,5 +124,5 @@ Add a key to dynamic child elements.
 	├── package.json
 	├── package-lock.json
 	└── README.md
-​
+	
 	17 directories, 26 files
