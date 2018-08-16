@@ -4,7 +4,7 @@
 
 ---
 
-### Docs
+### Documentation
 The documentation for the "Tutorial App" can be found [here](https://docs.senseidev.com/dokumentation/javascript-library/react/react-flux-1/tutorial-app)
 
 ---
