@@ -59,7 +59,7 @@ Add a key to dynamic child elements.
 	└─────────────────────┘
 	┌─────────────────────┐
                |             	A "STORE" has registered a callback with me. 
-    DISPATCHER        	I will notify that "STORE" now. 
+      	DISPATCHER        	I will notify that "STORE" now. 
 	└─────────────────────┘
 	┌─────────────────────┐
                |             	Much obliged for the update "DISPATCHER"! - I will update
