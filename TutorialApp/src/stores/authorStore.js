@@ -1,3 +1,7 @@
+/**
+ * In a Unidirectional Flow - Third Step - (authorStore.js) will notify (authorPage.js)
+ */
+
 "use strict";
 
 var Dispatcher = require('../dispatcher/appDispatcher');
@@ -57,6 +61,8 @@ Dispatcher.register(function(action) {
 			break;	
 
 		case ActionTypes.DELETE_AUTHOR:
+
+			//debugger;
 			_.remove(_authors, function(author) 
 			{
 				return action.id === author.id;

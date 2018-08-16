@@ -1,3 +1,7 @@
+/**
+ * In a Unidirectional Flow - First Step - (authorList.js) will notify (authorActions.js)
+ */
+
 "use strict";
 
 var React = require('react');
@@ -15,6 +19,8 @@ var AuthorList = React.createClass({
 
     deleteAuthor: function(id, event) {
         event.preventDefault();
+
+        //debugger;
         AuthorActions.deleteAuthor(id);
         Toastr.success('Author Deleted');
     },

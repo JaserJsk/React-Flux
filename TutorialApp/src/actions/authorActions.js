@@ -1,3 +1,7 @@
+/**
+ * In a Unidirectional Flow - Second Step - (authorActions.js) will notify (authorStore.js)
+ */
+
 "use strict";
 
 var Dispatcher = require('../dispatcher/appDispatcher');
@@ -26,6 +30,8 @@ var AuthorActions = {
 	},
 
 	deleteAuthor: function(id) {
+
+		//debugger;
 		AuthorApi.deleteAuthor(id);
 
 		Dispatcher.dispatch({

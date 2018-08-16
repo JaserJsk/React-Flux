@@ -1,3 +1,7 @@
+/**
+ * In a Unidirectional Flow - Fourth Step - (authorPage.js) will update the UI.
+ */
+
 "use strict";
 
 var React = require('react');
@@ -26,6 +30,8 @@ var AuthorPage = React.createClass({
     },
 
     _onChange: function() {
+
+        //debugger;
         this.setState({ authors: AuthorStore.getAllAuthors() });
     },
 
