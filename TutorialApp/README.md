@@ -63,11 +63,11 @@ Add a key to dynamic child elements.
 	└─────────────────────┘
 	┌─────────────────────┐
                |             	Much obliged for the update "DISPATCHER"! - I will update
-        	 STORE           	my data and emit an event for all components that care.
+             STORE           	my data and emit an event for all components that care.
 	└─────────────────────┘
 	┌─────────────────────┐
                |             	Thanks for the new data "STORE"! I will update the UI
-      	   COMPONENT         	to reflect all the changes.
+           COMPONENT         	to reflect all the changes.
 	└─────────────────────┘
 
 ---
