@@ -1,5 +1,8 @@
 ## Starter Kit for React Flux Applications
 
+### Docs
+The documentation for the "Starter Kit" can be found [here](https://docs.senseidev.com/dokumentation/javascript-library/react-flux-1/react-flux)
+
 ### Prerequisites
 1. Install [Node.js](https://nodejs.org/en/ "Node.js")
 2. Open PowerShell and navigate to project directory.
