@@ -153,10 +153,11 @@ Open `eslint.config.json` and add the below code.
 
 ---
 
-### Command Line
-1. Type `gulp` to Run the application.
-2. Type `ctrl + c` to kill current process.
-3. Type `ctrl + k` to clear the terminal.
+### Terminal
+* Type `gulp` to Run the application.
+* Open `http://localhost:9005/` in the browser.
+* Type `ctrl + c` to kill current process.
+* Type `ctrl + k` to clear the terminal.
 
 ---
 

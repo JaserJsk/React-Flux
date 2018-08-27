@@ -50976,6 +50976,10 @@ module.exports = require('./lib/React');
 }));
 
 },{"jquery":5}],204:[function(require,module,exports){
+/**
+ * In a Unidirectional Flow - Second Step - (authorActions.js) will notify (authorStore.js)
+ */
+
 "use strict";
 
 var Dispatcher = require('../dispatcher/appDispatcher');
@@ -51005,7 +51009,7 @@ var AuthorActions = {
 
 	deleteAuthor: function(id) {
 
-		debugger;
+		//debugger;
 		AuthorApi.deleteAuthor(id);
 
 		Dispatcher.dispatch({
@@ -51228,6 +51232,10 @@ var AuthorForm = React.createClass({displayName: "AuthorForm",
 module.exports = AuthorForm;
 
 },{"../common/reusables/textInput":215,"react":202}],211:[function(require,module,exports){
+/**
+ * In a Unidirectional Flow - First Step - (authorList.js) will notify (authorActions.js)
+ */
+
 "use strict";
 
 var React = require('react');
@@ -51246,7 +51254,7 @@ var AuthorList = React.createClass({displayName: "AuthorList",
     deleteAuthor: function(id, event) {
         event.preventDefault();
 
-        debugger;
+        //debugger;
         AuthorActions.deleteAuthor(id);
         Toastr.success('Author Deleted');
     },
@@ -51289,6 +51297,10 @@ var AuthorList = React.createClass({displayName: "AuthorList",
  module.exports = AuthorList;
 
 },{"../../actions/authorActions":204,"react":202,"react-router":33,"toastr":203}],212:[function(require,module,exports){
+/**
+ * In a Unidirectional Flow - Fourth Step - (authorPage.js) will update the UI.
+ */
+
 "use strict";
 
 var React = require('react');
@@ -51318,7 +51330,7 @@ var AuthorPage = React.createClass({displayName: "AuthorPage",
 
     _onChange: function() {
 
-        debugger;
+        //debugger;
         this.setState({ authors: AuthorStore.getAllAuthors() });
     },
 
@@ -51646,6 +51658,10 @@ var routes = (
 module.exports = routes;
 
 },{"./components/about/aboutPage":208,"./components/app":209,"./components/authors/authorPage":212,"./components/authors/manageAuthorPage":213,"./components/homePage":216,"./components/notFoundPage":217,"react":202,"react-router":33}],222:[function(require,module,exports){
+/**
+ * In a Unidirectional Flow - Third Step - (authorStore.js) will notify (authorPage.js)
+ */
+
 "use strict";
 
 var Dispatcher = require('../dispatcher/appDispatcher');
@@ -51706,7 +51722,7 @@ Dispatcher.register(function(action) {
 
 		case ActionTypes.DELETE_AUTHOR:
 
-			debugger;
+			//debugger;
 			_.remove(_authors, function(author) 
 			{
 				return action.id === author.id;
