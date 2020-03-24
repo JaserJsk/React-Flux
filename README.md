@@ -1,1 +1,1 @@
-React & Flux Projects Created By Jonas Jsk [Jonas.Jsk@outlook.com]
+React & Flux Projects Created By Jaser Jsk [Jaser.Jsk@gmail.com]
